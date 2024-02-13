@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Cartels
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<a href="./start" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        Report businesses agreeing not to compete with each other 
+      </h1>
+
+      <p>A <a href="https://cheatingorcompeting.campaign.gov.uk/#what_is_a_business_cartel_">business cartel</a> occurs when 2 or more businesses agree that they won’t compete with each other.</p>
+
+      <p>This may include:</p>
+      
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Fixing prices</li>
+        <li>Agreeing not to compete for jobs (bid-rigging)</li>
+        <li>Sharing markets (for example, by geographical area)</li>
+        <li>Sharing sensitive operational information between businesses</li>
+      </ul>
+         
+      <p>You may be eligible for a financial reward if you give us information that leads to an investigation, for more information read <a href="https://www.gov.uk/government/publications/cartels-informant-rewards-policy">Cartels: policy for witnessing and reporting</a>.</p>
+
+      <form action="https://cma-553899.workflowcloud.com/forms/c35b9608-b73d-464c-bbfa-0b3ccda758b2" method="post" novalidate>
+        <input type="hidden" name="answers-checked" value="true">
+        <button class="govuk-button" data-module="govuk-button">
+          Report a business cartel
+        </button>
+      </form>
+
+      <h2 class="govuk-heading-m">Apply for leniency</h2>
+        
+      <p>If you or your company has been involved in a cartel, you may be able to <a href="https://www.gov.uk/guidance/cartels-confess-and-apply-for-leniency">apply for leniency</a>.</p>
+
+    </div>
+
+  </div>
+{% endblock %}

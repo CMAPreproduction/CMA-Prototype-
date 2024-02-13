@@ -1,0 +1,42 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  CMA Prototypes
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Prototypes",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">CMA Prototypes</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Prototype</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="./cpg">CPG - CMA Public Gateway</a></th>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="./mwr">MWR - Make a Whistleblower Report</a></th>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="./fms">FMS - Funerals Market Service</a></th>
+    </tr>
+    <tr class=""govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="./mergers">Mergers</a></th>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

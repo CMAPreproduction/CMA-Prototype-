@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What are you reporting?
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./contact" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  
+    <h1 class="govuk-heading-xl">What are you submitting?</h1>
+
+    <p class="govuk-body">Select all options that apply to your organisation.</p>
+
+    <p class="govuk-body">Revenue returns are due twice a year:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Information covering the period from 1 September to the last day of February is due by the first working day of April</li>
+      <li>Information covering the period from 1 March to 31 August is due by the first working day of October</li>
+    </ul>
+    <p class="govuk-body">Compliance statements are due once a year:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Information covering the period from 1 April to 31 March is due on the last working day of April</li>
+    </ul>
+
+
+    <div class="govuk-form-group">
+
+      
+      <fieldset class="govuk-fieldset" aria-describedby="reporting-hint">
+      
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">Funeral Directors</h2>
+
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="april-funeral-director-returns5a" name="april-funeral-director-returns5a" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="april-funeral-director-returns5a">
+              April returns for 5 or more branches
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="october-funeral-director-returns10a" name="october-funeral-director-returns10a" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="october-funeral-director-returns10a">
+              April returns for 10 or more branches
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="april-funeral-director-returns5o" name="april-funeral-director-returns5o" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="april-funeral-director-returns5o">
+              October returns for 5 or more branches
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="october-funeral-director-returns10o" name="october-funeral-director-returns10o" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="october-funeral-director-returns10o">
+              October returns for 10 or more branches
+            </label>
+          </div>
+
+        </div>
+
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">Crematorium Operators</h2>
+        
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="april-crematorium-operator-returns" name="april-crematorium-operator-returns" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="april-crematorium-operator-returns">
+              April returns
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="october-crematorium-operator-returns" name="october-crematorium-operator-returns" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="october-crematorium-operator-returns">
+              October returns
+            </label>
+          </div>
+
+        </div>
+          
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">Compliance Statements</h2>
+        
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="funeral-director-compliance-statement" name="funeral-director-compliance-statement" type="checkbox" value="Yes">
+            <label class="govuk-label govuk-checkboxes__label" for="funeral-director-compliance-statement">
+              Funeral Director compliance statement
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="crematorim-operator-compliance-statement" name="crematorim-operator-compliance-statement" type="checkbox" value="Yes" >
+            <label class="govuk-label govuk-checkboxes__label" for="crematorim-operator-compliance-statement">
+              Crematorium Operator compliance statement
+            </label>
+          </div>
+
+        </div>
+      </fieldset>
+
+    </div>
+
+    <div class="govuk-body">
+      
+      <a class="govuk-button" href="./map">Continue</a>
+      
+    </div>    
+
+
+{% endblock %}

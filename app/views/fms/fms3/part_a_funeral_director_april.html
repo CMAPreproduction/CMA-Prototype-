@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Funeral directors with five or more branches (April)
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./logic_loop" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-xl">Funeral directors with five or more branches (April)</h2>
+
+      <p class="govuk-body">Please add the total revenue (excluding disbursements) and total number of funerals arranged to the table below. Each branch should be in a separate table row.</p>
+      <p class="govuk-body">These should be within the 6 month period starting from the previous 1 September.</p>
+      <p class="govuk-body">You can edit or remove any information given by selecting Change or Remove.</p>
+      <p class="govuk-body">Once you have entered all your branch information, select Continue.</p>
+      
+      <div class="govuk-form-group">
+
+        <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Total Revenue and Funerals Arranged by Branch</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Branch name</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Total Revenue<br /><small>Excluding Disbursements</small></th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Funerals Arranged<br /><small>Total Number</small></th>
+            <th scope="col" class="govuk-table__header">&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Example Branch A</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£1234.56</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">123</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric"><a href="./part_a_edit">Change</a> <a href="#">Remove</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Example Branch B</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£2345.56</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">234</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric"><a href="./part_a_edit">Change</a> <a href="#">Remove</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Totals</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£3580.23</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">357</td>
+                <td class="govuk-table__cell">&nbsp;</td>
+            </tr>
+        </tbody>
+        </table>
+
+      </div>
+
+      <div class="govuk-body"><a class="govuk-button govuk-button--secondary" href="./part_a_add">Add Branch</a></div>    
+
+      <div class="govuk-body"><a class="govuk-button" href="./logic_loop">Continue</a></div>    
+
+    </div>
+
+  </div>
+{% endblock %}

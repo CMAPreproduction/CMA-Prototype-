@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block pageTitle %}
+Which region of the UK is your report about?
+{% endblock %}
+
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./what-happened" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <form class="form" action="./region-related-answer" method="post">
+        
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Does your issue affect a specific nation in the UK?
+              </h1>
+            </legend>
+            <div id="waste-hint" class="govuk-hint">
+              Select which nation(s) of the UK you are concerned about:
+            </div>
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="region-0" name="region" type="checkbox" value="England">
+                <label class="govuk-label govuk-checkboxes__label" for="region-0">
+                  England
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="region-1" name="region" type="checkbox" value="Scotland">
+                <label class="govuk-label govuk-checkboxes__label" for="region-1">
+                  Scotland
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="region-2" name="region" type="checkbox" value="Wales">
+                <label class="govuk-label govuk-checkboxes__label" for="region-2">
+                  Wales
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="region-3" name="region" type="checkbox" value="Northern Ireland">
+                <label class="govuk-label govuk-checkboxes__label" for="region-3">
+                  Northern Ireland
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="region-4" name="region" type="checkbox" value="Not Sure">
+                <label class="govuk-label govuk-checkboxes__label" for="region-4">
+                  Not Sure
+                </label>
+              </div>
+            </div>
+
+            
+        
+          </fieldset>
+        </div>
+        
+        <div class="govuk-body">
+          <a class="govuk-button" href="./evidence">Continue</a>
+        </div>
+
+        
+      </form>
+
+    </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block pageTitle %}
+Upload Evidence
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-l">
+        Evidence
+      </h1>
+      
+      <div class="govuk-inset-text">
+        <p>You may provide evidence to support your submission.</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>upload up to 5 files</li>
+          <li>files can be up to 10 MB</li>
+          <li>most file types are supported (PDF, DOC, Excel, JPG, etc.)</li>
+        </ul>
+        <p>If you do not have additional evidence, select continue below.</p>
+      </div>
+
+      <div class="govuk-form-group">
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+      <br />
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Uploaded Files</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">&nbsp;</th>
+            <th scope="col" class="govuk-table__header">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Example Uploaded File.pdf</th>
+            <td class="govuk-table__cell"><a href="#">Remove</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Another Uploaded File.pdf</th>
+            <td class="govuk-table__cell"><a href="#">Remove</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <div class="govuk-body">
+        <a class="govuk-button" href="./business">Continue</a>
+      </div>    
+
+    </div>
+
+  </div>
+{% endblock %}

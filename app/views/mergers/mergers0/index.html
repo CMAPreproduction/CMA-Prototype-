@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Mergers Surveys
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./index">Home</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">CMA Mergers Case Management and RFI Prototype</h1>
+
+      <p class="govuk-body">The links below illustrate ideas that may be further developed into a working solution for the CMA Mergers case management and RFI project.</p>
+
+      <h3 class="govuk-heading-m">External User Access</h3>
+      <ul>
+        <li><a href="./login">Login</a></li>
+      </ul>
+      
+      <h3 class="govuk-heading-m">Merger Team Access</h3>
+      <ul>
+        <li><a href="./survey_list">GOV UK One Login</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+{% endblock %}

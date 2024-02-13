@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Notification Email
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./#">Home</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Notification Email</h1>
+
+<div class="govuk-inset-text">
+  The text below is an illustration of the email notification a user will receive in response to submitting a report.
+</div>
+
+<p class="govuk-body">Thank you for submitting your report to the Competition and Markets Authority (CMA).</p>
+<p class="govuk-body">Your reference number is <strong>CMA12345</strong>.</p>
+<p class="govuk-body">The report you have submitted helps your business comply with the <a href="https://assets.publishing.service.gov.uk/media/60c8b3c4e90e07439684be6b/Funerals_The_Funerals_Market_Investigation_Order_2021_150621.pdf">Funeral Markets Order 2021</a>, as part of our Funerals investigation.</p>
+<p class="govuk-body">If we need further information from you on your report  we may need to contact you again.</p>
+<p class="govuk-body">For questions about your report or any other queries, you can contact the CMA's Remedies team: <a href='mailto:RemediesMonitoringTeam@cma.gov.uk'>RemediesMonitoringTeam@cma.gov.uk</a></p>
+<p class="govuk-body">We handle all submissions in line with General Data Protection Regulations, and more information on this is held in our Personal Information Charter.</p>
+<p class="govuk-body"><strong>Competition and Markets Authority</strong></p>
+
+{% endblock %}

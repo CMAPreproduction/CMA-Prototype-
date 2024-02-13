@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Alternative Reporting Approach
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+  
+    <div class="govuk-body">
+      
+      <h1 class="govuk-heading-xl">Alternative Reporting Approach</h1>
+
+      <p class="govuk-body">Rather than present a user with a menu of choices of what they are reporting as a series of check-boxes, a series of questions would interactively determine the appropriate forms to show.</p>
+
+      <p class="govuk-body">The questions ask:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="./reporting-type">Organisation Type</a> - Funeral Director, Crematorium Operator, or both</li>
+        <li><a href="./reporting-branches">Number of Branches</a> - shown if Funeral Director chosen - more than 5, or more than 10</li>
+        <li><a href="./reporting-period">Reporting Period</a> - shown if Crematorium Operator chosen - April and/or October</li>
+        <li><a href="./reporting-compliance">Compliance Statement</a> - asks if they will be filing a compliance statement</li>
+      </ul>
+
+      <p class="govuk-body">For the purposes of this prototype, these questions are NOT responsive to each other, but in a real application, they would be (so for example the branches question is only asked if you prevously chose "Funeral Director").</p>
+
+      <p class="govuk-body">After answering the above questions, the user would be led through the appropriate forms to satisfy their answers (parts A, B, C and D of the submission, and an appropriate compliance statement).</p>
+
+      <a class="govuk-button" href="./reporting-type">Try them out!</a>
+      
+    </div>    
+
+
+{% endblock %}

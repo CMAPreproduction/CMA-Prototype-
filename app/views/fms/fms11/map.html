@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+The Logic Loop
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Send funeral or crematorium information to the CMA",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./reporting" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  
+  
+    <h1 class="govuk-heading-l">Map of Pages (for prototype only - not seen by users)</h1>
+
+    <p class="govuk-body">This page only exists for the purposes of the prototype only (because it is non functional) - in the real web application, the user would automatically move through the various pages as needed.</p>
+
+    <h2 class="govuk-heading-m">Information Gathering</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./organisation">Organisation Information</a></li>
+      <li><a href="./services">Services Provided</a></li>
+      <li><a href="./contact">Contact Information</a></li>
+      <li><a href="./reporting">Reporting Choices</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Reports</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./report_fd_5">Part A - Funeral Directors - 5 or more branches</a> - <em>April Illustrated</em></li>
+      <li><a href="./report_fd_10">Part B - Funeral Directors - 10 or more branches</a> - <em>April Illustrated</em> (plus options <a href="./report_fd_10a">A</a> and <a href="./report_fd_10b">B</a>)</li>
+      <li><a href="./report_co">Part C - Crematorium Operators</a> - <em>April Illustrated</em></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Compliance Statements</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./compliance_fd">Funeral Directors</a> ... <a href="./compliance_fd_more">More</a> - <em>10 or more branches</em></li>
+      <li><a href="./compliance_co">Crematorium Operators</a> ... <a href="./compliance_co_more">More</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Further Information Gathering</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./review">Review</a></li>
+      <li><a href="./summary">Summary</a></li>
+    </ul>
+
+{% endblock %}

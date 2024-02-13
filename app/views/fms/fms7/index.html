@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  CMA Funerals Market Service
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./#">Home</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Send funeral or crematorium statements to the CMA</h1>
+
+      <p class="govuk-body">Use this service to submit revenue returns and compliance statements, in line with the requirements of the Funerals Market Investigation Order 2021.</p>
+      <p class="govuk-body">Funeral directors and crematorium operators are required to fill out this form twice a year, covering the periods of 1 March to 31 August and 1 September to end of February.</p>
+
+      
+      <h2 class="govuk-heading-l">Information we will ask for</h2>
+      
+      <p class="govuk-body">In completing this form, you will be asked to provide information including:</p>
+      
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Your name and business details</li>
+        <li>Data on your business' revenue</li>
+        <li>Number of funerals or cremations your business carried out during the reporting period</li>
+        <li>Compliance statement</li>
+      </ul>
+      
+      <a href="./organisation" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start Now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+{% endblock %}

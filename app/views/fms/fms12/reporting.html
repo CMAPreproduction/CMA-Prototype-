@@ -1,0 +1,238 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What are you reporting?
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Send funeral or crematorium information to the CMA",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./contact" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  
+    <h1 class="govuk-heading-xl">What are you submitting?</h1>
+
+    <p class="govuk-body">Select all options that apply to your organisation.</p>
+    
+    <h2 class="govuk-heading-l">Revenue returns</h2>
+    
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Revenue returns are due twice a year
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Submission type</th>
+                <th scope="col" class="govuk-table__header">Starts</th>
+                <th scope="col" class="govuk-table__header">Ends</th>
+                <th scope="col" class="govuk-table__header">Due</th>
+              </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="col" class="govuk-table__cell">April returns</td>
+              <td scope="col" class="govuk-table__cell">1 September</td>
+              <td scope="col" class="govuk-table__cell">30 November</td>
+              <td scope="col" class="govuk-table__cell">First working day of April</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="col" class="govuk-table__cell">October returns</td>
+              <td scope="col" class="govuk-table__cell">1 March</td>
+              <td scope="col" class="govuk-table__cell">31 August</td>
+              <td scope="col" class="govuk-table__cell">First working day of October</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="reporting-hint">
+
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contact" name="fd" type="checkbox" value="email" data-aria-controls="conditional-fdr">
+            <label class="govuk-label govuk-checkboxes__label" for="fd">
+              Funeral director return
+            </label>
+          </div>
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-fdr">
+            <div class="govuk-form-group">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-quarter">
+                  <label class="govuk-label" for="fd_year">Year</label>
+                  <select class="govuk-select" id="fd_year" name="fd_year">
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+                <div class="govuk-grid-column-one-quarter">
+                  <label class="govuk-label" for="fd_month">Month</label>
+                  <select class="govuk-select" id="fd_month" name="fd_month">
+                    <option value="April" selected>April</option>
+                    <option value="October">October</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contact" name="co" type="checkbox" value="email" data-aria-controls="conditional-cor">
+            <label class="govuk-label govuk-checkboxes__label" for="co">
+              Crematorium operator return
+            </label>
+          </div>
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-cor">
+            <div class="govuk-form-group">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-quarter">
+                  <label class="govuk-label" for="co_year">Year</label>
+                  <select class="govuk-select" id="co_year" name="co_year">
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+                <div class="govuk-grid-column-one-quarter">
+                  <label class="govuk-label" for="co_month">Month</label>
+                  <select class="govuk-select" id="co_month" name="co_month">
+                    <option value="April" selected>April</option>
+                    <option value="October">October</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </fieldset>
+    </div>
+
+    <h2 class="govuk-heading-l">Compliance statements</h2>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Compliance statements are due once a year
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Submission type</th>
+              <th scope="col" class="govuk-table__header">Starts</th>
+              <th scope="col" class="govuk-table__header">Ends</th>
+              <th scope="col" class="govuk-table__header">Due</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="col" class="govuk-table__cell">Compliance statements</td>
+              <td scope="col" class="govuk-table__cell">1 April</td>
+              <td scope="col" class="govuk-table__cell">31 March</td>
+              <td scope="col" class="govuk-table__cell">last day of February</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    
+    
+
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset" aria-describedby="reporting-hint">
+              
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contact" name="fd" type="checkbox" value="email" data-aria-controls="conditional-fds">
+            <label class="govuk-label govuk-checkboxes__label" for="fd">
+              Funeral director compliance statement
+            </label>
+          </div>
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-fds">
+            <div class="govuk-form-group">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-quarter">
+                  <label class="govuk-label" for="fd_year">Year</label>
+                  <select class="govuk-select" id="fd_year" name="fd_year">
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contact" name="co" type="checkbox" value="email" data-aria-controls="conditional-cos">
+            <label class="govuk-label govuk-checkboxes__label" for="co">
+              Crematorium operator compliance statement
+            </label>
+          </div>
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-cos">
+            <div class="govuk-form-group">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-quarter">
+                  <label class="govuk-label" for="co_year">Year</label>
+                  <select class="govuk-select" id="co_year" name="co_year">
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </fieldset>
+
+    </div>
+
+    <div class="govuk-body">
+      
+      <a class="govuk-button" href="./map">Continue</a>
+      
+    </div>    
+
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Part A - Add Branch
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./part_a_funeral_director" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-l">
+        Add Branch
+      </h1>
+
+      <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum nisl eget lectus convallis, et rhoncus justo vehicula.</p>
+      
+      <div class="govuk-form-group">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--m" for="branch-name">
+              Branch name
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--m" for="total-revenue">
+            Total revenue
+          </label>
+          <div id="total-revenue-hint" class="govuk-hint">
+            (excluding disbursements)
+          </div>
+          <div class="govuk-input__wrapper">
+              <div class="govuk-input__prefix" aria-hidden="true">£</div>
+              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--m" for="total-revenue">
+            Total number
+          </label>
+          <div id="total-revenue-hint" class="govuk-hint">
+            Funerals Arranged
+          </div>
+          <div class="govuk-input__wrapper">
+              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="govuk-body">
+        
+        <a class="govuk-button" href="./report_fd_5">Add Branch</a>
+        
+      </div>    
+
+    </div>
+
+  </div>
+{% endblock %}

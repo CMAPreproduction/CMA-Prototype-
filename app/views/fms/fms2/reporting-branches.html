@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+How many branches are you reporting for?
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./reporting-type" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset" aria-describedby="reporting-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            How many branches are you reporting for?
+          </h1>
+        </legend>
+        <div id="reporting-hint" class="govuk-hint">
+          As a funeral director, how many branches are you reporting for:
+        </div>
+
+      
+        <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="branches5" name="branches" type="radio" value="5">
+            <label class="govuk-label govuk-radios__label" for="branches5">
+              More than 5
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="branches10" name="branches" type="radio" value="10">
+            <label class="govuk-label govuk-radios__label" for="branches10">
+              More than 10
+            </label>
+          </div>
+        </div>
+    
+      
+
+      </fieldset>
+
+    </div>
+
+    <div class="govuk-body">
+      
+      <a class="govuk-button" href="./reporting-period">Continue</a>
+      
+    </div>    
+
+
+{% endblock %}

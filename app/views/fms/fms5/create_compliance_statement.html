@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create compliance statement
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<a href="./home" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-form-group">
+<h1 class="govuk-heading-l">
+  Which compliance statement are you submitting?
+</h1>
+<p class="govuk-body">Your organisation provides both Funeral and Cremation services - choose which type of compliance statement you would like to prepare:</p>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    
+    
+    <div class="govuk-radios" data-module="govuk-radios">
+    <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="type-1" name="type" type="radio" value="Funeral Director" checked>
+        <label class="govuk-label govuk-radios__label" for="type-1">
+        Funeral Director<br /><small>Last working day of April (covering 1st April to 31st March)</small>
+        </label>
+    </div>
+    <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="type-2" name="type" type="radio" value="Crematorium Operator">
+        <label class="govuk-label govuk-radios__label" for="type-2">
+        Crematorium Operator<br /><small>Last working day of April (covering 1st April to 31st March)</small>
+        </label>
+    </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+<a href="./compliance_funeral_director"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+</div>
+
+{% endblock %}

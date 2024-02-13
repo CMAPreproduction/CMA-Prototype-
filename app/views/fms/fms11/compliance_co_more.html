@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Submit your compliance statement
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Send funeral or crematorium information to the CMA",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./map" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+  
+      <form class="edit_statement" id="edit_statement_61d38586-615e-4b91-ab42-6b69e9025e99" action="./map" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="QIiC8e3BXUW4PQGbZmflpY39Qr0LsSuVrwpCZexYsouRF86r0uM_xAH6K-hRD-lQ1q0ExeLMZqYHu-hpyzT7SQ" autocomplete="off" />
+
+    
+    
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="5000"><div class="govuk-form-group"><label for="statement-further-information-field" class="govuk-label govuk-label--xl">Tell us more about your compliance statement</label><div class="govuk-hint" id="statement-further-information-hint"><p class="govuk-body">Outline which of the options given on the previous page you weren't able to select.</p>
+    <p class="govuk-body">This could be, for example that you are in the process of terminating a prohibited arrangement, or your Terms of Business is not yet displayed prominently in each of your branches.</p>
+    <p class="govuk-body">You can tell us why you're not yet compliant with the Order, and include dates of when you think you will be fully compliant.</p>
+    <p class="govuk-body">Our remedies team will be in touch with you for further information if required.</p>
+    </div><textarea id="statement-further-information-field" class="govuk-textarea govuk-js-character-count" rows="10" aria-describedby="statement-further-information-hint statement-further-information-field-info" name="statement[further_information]">
+    </textarea><span id="statement-further-information-field-info" class="govuk-hint govuk-character-count__message">You can enter up to 5000 characters</span></div></div>
+        
+        <button type="submit" formnovalidate="formnovalidate" class="govuk-button" data-module="govuk-button" data-prevent-double-click="true">Continue</button>
+        
+    </form>
+
+
+    </div>
+  </div>
+{% endblock %}

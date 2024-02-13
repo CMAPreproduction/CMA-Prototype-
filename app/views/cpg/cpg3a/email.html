@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Email Notification Text
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+
+<h1  class="govuk-heading-xl">Email Notification Text</h1>
+
+<p>Thank you for contacting the Competition and Markets Authority (CMA). Your reference number is CMA12345.</p>
+
+<p>Your report will help us to understand better the problems that people are experiencing and to take action to tackle unfair or illegal business practices. We take very seriously the many reports we receive on these issues, and the information you have provided us is extremely valuable.</p>
+
+<p>We might need to contact you again to request further information but, if you do not hear further from us, please rest assured that your concerns are being taken into account you do not need to do anything further.</p>
+
+<p>Unfortunately, we are unable to provide an update on individual complaints and replies to this email address are not being monitored. However, if you wish to report another issue or provide additional information or evidence to your existing report, please use our dedicated online form. Further information on reporting is available on our <a href="https://www.gov.uk/guidance/tell-the-cma-about-a-competition-or-market-problem">report a competition or market problem guidance page</a>.</p>
+
+<p>Thank you again for taking the time to contact us.</p>
+
+<p>Yours sincerely,</p>
+
+<p>The Competition and Markets Authority</p>
+
+{% endblock %}

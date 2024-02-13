@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block pageTitle %}
+Thankyou
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Report Submitted
+        </h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>CMA12345</strong>
+        </div>
+      </div>
+
+      <p class="govuk-body">Thank you for submitting, we've sent you a confirmation email.</p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+
+      <p class="govuk-body">
+        Your report has been sent to the Competition and Markets Authority. The CMA are monitoring all the information provided and will take actions where appropriate. However, we are unable to provide feedback on individual reports or provide details of how your enquiry may be used.
+      </p>
+
+      <div>
+        <button class="govuk-button" data-module="govuk-button">
+          Save a Copy
+        </button>
+      </div>
+      
+      <p class="govuk-body">
+        <a href="#" class="govuk-link">How did we do today?</a> Take our survey on our service (takes 30 seconds)
+      </p>
+
+
+
+    </div>
+  </div>
+{% endblock %}

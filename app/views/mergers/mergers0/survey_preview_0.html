@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Edit Survey
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Example Survey</h1>
+      <h2 class="govuk-heading-m">Reference - SRV-0001</h2>
+      <div class="govuk-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu feugiat tortor, ut faucibus nunc. In et diam sed tortor lobortis elementum fermentum maximus massa. Pellentesque consequat, mi id pulvinar congue, risus sapien bibendum tellus, at mattis metus massa at risus. Sed et nisl justo. Duis arcu tortor, porttitor in tellus a, interdum ullamcorper ante. Suspendisse non turpis viverra, cursus urna elementum, placerat dui. Proin imperdiet orci in justo semper, tincidunt porta nunc bibendum. Nulla consectetur tristique congue. Nulla ac blandit ex. Sed faucibus aliquet sem nec ornare. Suspendisse id augue arcu. Maecenas varius tincidunt mi, sit amet mattis metus maximus et. Sed placerat quis urna quis ultricies.</p>
+        <p>Nulla elementum mi sed malesuada tempus. Fusce venenatis metus sit amet augue facilisis, sed cursus tellus auctor. Nunc pretium eros dolor, eget lobortis turpis feugiat at. Phasellus sed mi et tortor tempor sollicitudin quis sed massa. Fusce bibendum ipsum diam, in pharetra turpis tempus sed. Etiam tempus est eu ante pharetra, sit amet bibendum dui commodo. Aliquam nec tortor ut nisi efficitur iaculis quis quis dolor. Aenean commodo dapibus commodo. Mauris volutpat purus nec ultricies mattis.</p>
+      </div>
+
+      <p><a class="gem-c-button govuk-button govuk-button--start" role="button" data-module="govuk-button" draggable="false" href="./survey_preview_1"> Start <svg class="govuk-button__start-icon govuk-!-display-none-print" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewbox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a></p>
+
+    </div>
+
+  </div>
+{% endblock %}

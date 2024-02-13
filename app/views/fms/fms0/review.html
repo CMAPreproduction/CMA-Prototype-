@@ -1,0 +1,523 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Review Answers
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./further_information" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      
+      <h1 class="govuk-heading-xl">Review Your Submission</h1>
+
+      <p>Click the change link next to any field to modify its contents.</p>
+
+      <h2 class="govuk-heading-l">Organisation Information</h2>
+      
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Organisation Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            ABC Corp
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./organisation">
+              Change<span class="govuk-visually-hidden"> organisation</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Street Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            123 The Road
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./organisation">
+              Change<span class="govuk-visually-hidden"> organisation</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Town or City
+          </dt>
+          <dd class="govuk-summary-list__value">
+            London
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./organisation">
+              Change<span class="govuk-visually-hidden"> organisation</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            County
+          </dt>
+          <dd class="govuk-summary-list__value">
+            London
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./organisation">
+              Change<span class="govuk-visually-hidden"> organisation</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Postcode
+          </dt>
+          <dd class="govuk-summary-list__value">
+            ABC 123
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./organisation">
+              Change<span class="govuk-visually-hidden"> organisation</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Website
+          </dt>
+          <dd class="govuk-summary-list__value">
+            https://abccorp.com
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./organisation">
+              Change<span class="govuk-visually-hidden"> organisation</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l">Contact Information</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            First Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jonathan
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./contact">
+              Change<span class="govuk-visually-hidden"> first name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Last Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Beckett
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./contact">
+              Change<span class="govuk-visually-hidden"> last name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Telephone Number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            01234 123456
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./contact">
+              Change<span class="govuk-visually-hidden"> telephone number</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Email Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            jonathan.beckett@deltascheme.com
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./contact">
+              Change<span class="govuk-visually-hidden"> email address</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Send Email Reminders?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./contact">
+              Change<span class="govuk-visually-hidden"> reminders</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l">Reporting</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Funeral Director Returns<br />(5 or more branches)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./reporting">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Funeral Director Returns<br />(10 or more branches)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./reporting">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Crematorium Operator Returns
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./reporting">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Funeral Director Compliance Statements
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./reporting">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Crematorium Operator Compliance Statements
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./reporting">Change</a>
+          </dd>
+        </div>
+      </dl>
+
+      
+      <h2 class="govuk-heading-l">Funeral Director returns with five or more branches</h2>
+      
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+
+          <table class="govuk-table">
+          <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Branch name</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Total Revenue<br /><small>Excluding Disbursements</small></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Funerals Arranged<br /><small>Total Number</small></th>
+              </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Example Branch A</th>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£1234.56</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">123</td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Example Branch B</th>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£2345.56</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">234</td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Totals</th>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£3580.23</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">357</td>
+              </tr>
+          </tbody>
+          </table>
+          <p class="govuk-body"><a href="./part_a_funeral_director">Change</a></p>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l">Funeral Director returns with ten or more branches</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+              
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" rowspan="2" class="govuk-table__header">Branch</th>
+                  <th scope="col" colspan="2" class="govuk-table__header govuk-table__header--numeric">CMA&nbsp;Attended</th>
+                  <th scope="col" colspan="2" class="govuk-table__header govuk-table__header--numeric">Other&nbsp;Attended</th>
+                  <th scope="col" colspan="2" class="govuk-table__header govuk-table__header--numeric">CMA&nbsp;Unattended</th>
+                  <th scope="col" colspan="2" class="govuk-table__header govuk-table__header--numeric">Other&nbsp;Unattended</th>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">No.</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">No.</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">No.</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue</th>
+                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">No.</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Example Branch A</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£1234.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">123</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£1234.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">123</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£1234.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">123</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£1234.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">123</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Example Branch B</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£2345.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">234</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£2345.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">234</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£2345.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">234</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£2345.56</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">234</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Totals for all branches</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£3580.23</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">357</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£3580.23</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">357</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£3580.23</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">357</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£3580.23</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">357</td>
+                </tr>
+            </tbody>
+          </table>
+          <p class="govuk-body"><a href="./part_b_funeral_director">Change</a></p>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l">Crematorium Operator Returns</h2>
+
+        <h3 class="govuk-heading-m">Standard Fee Attended Services</h3>
+        
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Total Revenue</dt>
+            <dd class="govuk-summary-list__value">£12345.67</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorum_operator_april">Change</a></dd>
+          </div>
+        
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Number of Cremations</dt>
+            <dd class="govuk-summary-list__value">123</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+
+        </dl>
+
+        <h3 class="govuk-heading-m">Reduced Fee Attended Services</h3>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Total Revenue</dt>
+            <dd class="govuk-summary-list__value">£12345.67</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Number of Cremations</dt>
+            <dd class="govuk-summary-list__value">123</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+        </dl>
+
+        <h3 class="govuk-heading-m">Unattended Services</h3>
+        
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Total Revenue</dt>
+            <dd class="govuk-summary-list__value">£12345.67</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Number of Cremations</dt>
+            <dd class="govuk-summary-list__value">123</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+        </dl>
+        
+        <h3 class="govuk-heading-m">Other Services</h3>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Total Revenue</dt>
+            <dd class="govuk-summary-list__value">£12345.67</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Number of Cremations</dt>
+            <dd class="govuk-summary-list__value">123</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+        </dl>
+      
+        <h3 class="govuk-heading-m">Memorials</h3>
+        
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Total Revenue</dt>
+            <dd class="govuk-summary-list__value">£12345.67</dd>
+            <dd class="govuk-summary-list__actions"><a href="./part_c_crematorium_operator_april">Change</a></dd>
+          </div>
+        </dl>
+
+
+
+
+      <h2 class="govuk-heading-l">Compliance</h2>
+      
+      <p class="govuk-body">The following statements were agreed to:</p>
+      
+      
+      <h3 class="govuk-heading-m">Funeral Directors</h3>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">In-Compliance</dt>
+          <dd class="govuk-summary-list__value">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>The Standardised Price List, Additional Options Price List and the price information provided by Crematorium Operators in accordance with Article 8 of the Order are displayed clearly and prominently within each of our Branches and on our website (where applicable) in accordance with Article 3 of the Order.</li>
+              <li>The Terms of Business are displayed clearly and prominently at each of our Branches and on our website (if applicable) in accordance with Article 4 of the Order.</li>
+              <li>Our interests are disclosed clearly and prominently at each of our Branches and on our website (if applicable) in accordance with Article 5 of the Order.</li>
+              <li>We have not entered into any arrangement with another party which could reasonably be understood to encourage, incentivise or require that party to refer Customers or potential Customers to us, or to give us preference over other Funeral Directors, in accordance with Article 6 of the Order.</li>
+            </ul>
+          </dd>
+          <dd class="govuk-summary-list__actions"><a href="./compliance_funeral_director">Change</a></dd>
+
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dt class="govuk-summary-list__key">NOT In-Compliance</dt>
+          <dd class="govuk-summary-list__value">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>We have terminated any arrangement, exchange of services or payments prohibited by Article 6 of the Order, in accordance with Article 7 of the Order.</li>    
+              <li>We have provided the information required by the CMA, to the CMA, in accordance with Article 9 of the Order.</li>
+            </ul>
+          </dd>
+          <dd class="govuk-summary-list__actions"><a href="./compliance_funeral_director">Change</a></dd>
+
+        </div>
+      </dl>
+
+      <h3 class="govuk-heading-m">Crematorium Operators</h3>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">In-Compliance</dt>
+          <dd class="govuk-summary-list__value">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>We have provided local Funeral Directors with the price information specified in Article 8 of the Order, in accordance with Article 8 of the Order.</li>
+            </ul>
+          </dd>
+          <dd class="govuk-summary-list__actions"><a href="./compliance_crematorium_operator">Change</a></dd>
+
+        </div>
+        <div class="govuk-summary-list__row">
+        
+          <dt class="govuk-summary-list__key">NOT In-Compliance</dt>
+          <dd class="govuk-summary-list__value">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>We have provided the information required by the CMA, to the CMA, in accordance with Article 10 of the Order.</li>
+            </ul>
+          </dd>
+          <dd class="govuk-summary-list__actions"><a href="./compliance_crematorium_operator">Change</a></dd>
+
+        </div>  
+
+        
+      </dl>
+
+
+      <h2 class="govuk-heading-l">Further Information</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">&nbsp;</dt>
+          <dd class="govuk-summary-list__value">Sed blandit ut orci dapibus tempor. Curabitur lacinia, est et scelerisque porttitor, magna leo vestibulum magna, sit amet gravida nulla libero interdum felis. Integer sit amet dapibus ligula.</dd>
+          <dd class="govuk-summary-list__actions"><a href="./further_information">Change</a></dd>
+        </div>
+      </dl>
+
+      <p class="govuk-body">By submitting this report you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+      <div >
+        <form action="./information-use" method="post" novalidate>
+          <input type="hidden" name="answers-checked" value="true">
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+{% endblock %}

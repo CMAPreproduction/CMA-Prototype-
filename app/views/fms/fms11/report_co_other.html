@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Crematorium operators returns (April)
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Send funeral or crematorium information to the CMA",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./report_co" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Crematorium Operator Return<br />First Quarter</h1>
+
+
+      <form class="edit_report" id="edit_report_f75da7d6-71d6-4187-bbfb-ef8a1649f97f" action="./report_co" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="2kGEDuPuHdiuzY12RcgTxfxHVvHUk7iZqkA0C4KWRDALZOZMTS9sOyqpEkH011BGZgCgXa84gPLvriT5LmpZFA" autocomplete="off" />
+      
+          <fieldset class="govuk-fieldset"><legend class="govuk-fieldset__legend govuk-fieldset__legend--l">Other services</legend>
+              
+              <p class="govuk-body">Add the total revenue and total number of cremations carried out for any other services not identified by the categories above.</p>
+      <p class="govuk-body">Leave the boxes blank if not applicable to your business.</p>
+      
+      
+              <div class="govuk-form-group"><label for="report-q1-other-revenue-field" class="govuk-label">Total revenue</label><div class="govuk-input__wrapper"><span class="govuk-input__prefix" aria-hidden="true">£</span><input id="report-q1-other-revenue-field" class="govuk-input govuk-input--width-10" value="0" pattern="[0-9]*" inputmode="numeric" type="text" name="report[q1_other_revenue]" /></div></div>
+              <div class="govuk-form-group"><label for="report-q1-other-number-field" class="govuk-label">Total number of cremations carried out</label><input id="report-q1-other-number-field" class="govuk-input govuk-input--width-5" inputmode="numeric" type="text" value="0" name="report[q1_other_number]" /></div>
+      
+      </fieldset>    
+          <div class="govuk-button-group"><button type="submit" formnovalidate="formnovalidate" class="govuk-button" data-module="govuk-button" data-prevent-double-click="true">Submit</button>
+              <a class="govuk-button govuk-button--secondary" href="./report_co">Cancel</a>
+      </div>    
+      </form>    
+
+    </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  FMS Prototypes
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "FMS Prototypes",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">FMS Prototypes</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" NOWRAP>Link to Prototype</th>
+      <th scope="col" class="govuk-table__header" NOWRAP>Date</th>
+      <th scope="col" class="govuk-table__header" NOWRAP>Notes</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/mergers/mergers0/index">Version 0</a></th>
+      <td class="govuk-table__cell" NOWRAP>2023-12-01</td>
+      <td class="govuk-table__cell">Prototype mergers survey application</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}

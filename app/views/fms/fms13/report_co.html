@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Crematorium operators returns (April)
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Send funeral or crematorium information to the CMA",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./map" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+
+      <h1 class="govuk-heading-xl">Crematorium operator April 2023 return</h1>
+
+      <p class="govuk-body">Add total revenue (excluding disbursements) and total number of cremations carried out to the table below. Each crematoria facility should be in a separate row. You can choose to download a pre-prepared template (<a href="#upload">see below</a>) to automatically populate the tables on this page.</p>
+      <p class="govuk-body">Include revenue and number of services that were Standard Fee Attended Services, Reduced Fee Attended Services, Unattended Services or Other services. Visit the <a href="https://assets.publishing.service.gov.uk/media/60c8b3c4e90e07439684be6b/Funerals_The_Funerals_Market_Investigation_Order_2021_150621.pdf" target="_blank">Funerals Order (opens in a new tab)</a> for more details on these definitions.</p>
+      <p class="govuk-body">You must also account separately for revenue generated from memorials related to cremations.</p>
+      <p class="govuk-body">Information due in April and October must cover the following two preceding quarters respectively, as illustrated below:</p>
+
+      
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Period</th>
+                    <th scope="col" class="govuk-table__header">Starts</th>
+                    <th scope="col" class="govuk-table__header">Ends</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td scope="col" class="govuk-table__cell">First quarter</td>
+                <td scope="col" class="govuk-table__cell">1 September 2022</td>
+                <td scope="col" class="govuk-table__cell">30 November 2022</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td scope="col" class="govuk-table__cell">Second quarter</td>
+                <td scope="col" class="govuk-table__cell">1 December 2022</td>
+                <td scope="col" class="govuk-table__cell">last day of February 2023</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    
+      <br />
+
+      <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">First quarter summary</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header" style="vertical-align:bottom;">Crematoria Facility</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue from cremations</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue from memorials</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Number of cremations</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Action</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Example Crematoria facility A</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£4936</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£1234</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">48</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric"><a href="./report_co_branch_edit">Edit</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Example Crematoria facility B</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£4936</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£1234</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">48</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric"><a href="./report_co_branch_edit">Edit</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Totals</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£9872</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£2468</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">96</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">&nbsp;</td>
+          </tr>
+      </tbody>
+      </table>
+
+      <br />
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Second quarter summary</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" style="vertical-align:bottom;">Crematoria facility</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Revenue from cremations</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Number of cremations</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Example Crematoria facility A</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£4936</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£1234</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">48</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric"><a href="./report_co_branch_edit">Edit</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Example Crematoria facility B</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£4936</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£1234</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">48</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric"><a href="./report_co_branch_edit">Edit</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Totals</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£9872</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£2468</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">96</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&nbsp;</td>
+            </tr>
+        </tbody>
+        </table>
+      
+      <div class="govuk-body"><a class="govuk-button govuk-button--secondary" href="./report_co_branch_add">Add Crematoria facility</a></div>
+      
+      <h2 class="govuk-heading-m govuk-!-margin-top-9">Upload your data</h2>
+      <p class="govuk-body"><p class="govuk-body">Download a <a href="/public/downloads/fms_template_co_branches.xlsx" title="Crematorium Operator Reporting Spreadsheet">crematorium operator reporting template (downloads file)</a> which you can enter your business' data into.</p>
+      <p class="govuk-body">Upload the completed spreadsheet to automatically populate the table above.</p>
+      </p>
+      <form class="edit_report" id="edit_report_3279bdc2-7c9e-4cca-9df5-bdcc3673e34a" enctype="multipart/form-data" action="./report_co" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" autocomplete="off" /><input type="hidden" name="authenticity_token" value="L_rkAASlY7Ua0dxV_fsOiPAqdWexuAwXe08qLOObFf8-VxJtAo7iLkWS7bjov0TLM8JPH8NbXIlraFvrifBO2Q" autocomplete="off" />
+          <input value="3279bdc2-7c9e-4cca-9df5-bdcc3673e34a" autocomplete="off" type="hidden" name="report[id]" id="report_id" />
+          <div class="govuk-form-group"><label for="report-spreadsheet-field" class="govuk-label govuk-label--s">Upload spreadsheet</label><input id="report-spreadsheet-field" class="govuk-file-upload upload-input" accept=".xlsx" enctype="multipart/form-data" type="file" name="report[spreadsheet]" /></div>
+          <button type="submit" formnovalidate="formnovalidate" class="govuk-button govuk-button--secondary" data-module="govuk-button" data-prevent-double-click="true">Upload</button>
+      </form>
+      
+      
+      <form class="edit_report" id="edit_report_3279bdc2-7c9e-4cca-9df5-bdcc3673e34a" action="./map" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="DoddjJo4bOMTUKjGSOAN-f8BiX015Wn09SkLyTklDf9aGbXqS7hdM8SaGKv3A_JF09CZRZdHqaqoiW6a7nheaw" autocomplete="off" />
+          <button type="submit" formnovalidate="formnovalidate" class="govuk-button" data-module="govuk-button" data-prevent-double-click="true">Continue</button>
+      </form>
+
+
+    </div>
+
+  </div>
+{% endblock %}

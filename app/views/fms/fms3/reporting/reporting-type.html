@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What type of organisation are you reporting for?
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+  
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset" aria-describedby="reporting-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            What type of organisation are you reporting for?
+          </h1>
+        </legend>
+        <div id="reporting-hint" class="govuk-hint">
+          Select the type of organisation you are reporting for (you can choose more than one):
+        </div>
+
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-type-funeral-director" name="organisation-type-funeral-director" type="checkbox" value="Funeral Director">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-type-funeral-director">
+              Funeral Director
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-type-crematorium-operator" name="organisation-type-crematorium-operator" type="checkbox" value="Crematorium Operator">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-type-crematorium-operator">
+              Crematorium Operator
+            </label>
+          </div>
+
+        </div>
+
+      </fieldset>
+
+    </div>
+
+    <div class="govuk-body">
+      
+      <a class="govuk-button" href="./reporting-branches">Continue</a>
+      
+    </div>    
+
+
+{% endblock %}

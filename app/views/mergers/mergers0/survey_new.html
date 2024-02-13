@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create Survey
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./survey_list">Back</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h2 class="govuk-heading-xl">Edit Survey</h2>
+
+      <h2 class="govuk-heading-l">Name</h2>
+      <div class="govuk-inset-text">
+        This is the text that will appear both in the subject of the email notification sent to a respondent, and at the top of the survey when they open it.
+      </div>
+      <p class="govuk-body"><strong>Example Survey 1</strong></p>
+      <p class="govuk-body"><a href="./question_name_edit">Edit</a></p>
+
+      <h2 class="govuk-heading-l">Introduction</h2>
+      <div class="govuk-inset-text">
+        This text will appear below the heading of the survey. Any introductory guidance to the user should go here.
+      </div>
+      <p class="govuk-body"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend interdum eros. Praesent scelerisque tincidunt magna, nec tristique lectus rhoncus eu. Sed eu turpis diam. Morbi magna libero, accumsan vel erat tempor, dapibus ultrices neque.</strong></p>
+      <p class="govuk-body"><a href="./question_intro_edit">Edit</a></p>
+
+      <br />
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--l">Questions</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" >Number</th>
+            <th scope="col" class="govuk-table__header" >Text</th>
+            <th scope="col" class="govuk-table__header" >Data Type</th>
+            <th scope="col" class="govuk-table__header" >Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">1</th>
+            <td scope="row" class="govuk-table__cell">What is your name?</td>
+            <td scope="row" class="govuk-table__cell">Single line text</td>
+            <td scope="row" class="govuk-table__cell"><a href="./question_edit">Edit</a> <a href="#">Remove</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">2</th>
+            <td scope="row" class="govuk-table__cell">What is your favourite colour?</td>
+            <td scope="row" class="govuk-table__cell">Choice</td>
+            <td scope="row" class="govuk-table__cell"><a href="./question_edit">Edit</a> <a href="#">Remove</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">3</th>
+            <td scope="row" class="govuk-table__cell">Why did you choose Red?</td>
+            <td scope="row" class="govuk-table__cell">Multi-line Text</td>
+            <td scope="row" class="govuk-table__cell"><a href="./question_edit">Edit</a> <a href="#">Remove</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+      <div class="govuk-button-group">
+        <a class="govuk-button" href="./survey_new">Add New Question</a>
+      </div>
+
+
+    </div>
+
+  </div>
+{% endblock %}

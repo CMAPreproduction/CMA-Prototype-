@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  CMA Public Gateway - Contact the Competition and Markets Authority
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./homepage">Home</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        Make a Whistleblower Report
+      </h1>
+
+      <p>Use this service to tell the <a href="https://www.gov.uk/government/organisations/competition-and-markets-authority/about">Competition and Markets Authority (CMA)</a> about illegal activities carried out by the business or organisation you're employed by.</p>
+
+      <p>If the illegal activity relates to the sale of products, the supply of services or about competition affecting markets in the UK, it's important you report it to the CMA.</p>
+
+      <p><a href="https://www.gov.uk/government/publications/whistleblowers-at-the-cma">Find out more about whistleblowing</a>, and what it means to be a whistle-blower, including your rights and how the CMA will protect your identity.</p>
+
+      <p>The information you provide will help the CMA to prioritise its action against possible breaches of competition or consumer law.</p>
+
+      <h2 class="govuk-heading-m">Information you will need to provide</h2>
+      
+      <p>You will be asked to provide:</h2>
+      
+      <ul class="govuk-list govuk-list--bullet">
+        <li>A description of the issue, including its impact</li>
+        <li>Any supporting evidence you have</li>
+        <li>Details about yourself and, if applicable, your organisation</li>
+      </ul>
+
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>The information you share with us will be used by the CMA and other organisations, to monitor and possibly take action to stop unfair business behaviour.</p>
+
+      <p>As part of your report, you can choose to provide contact details to the CMA.</p>
+        
+      <p>If you provide these details, the CMA will be processing your personal data. 'Personal data' is information which relates to an individual who can be identified from it.</p>
+        
+      <p>We take anonymity seriously, and more information about how we handle complaints and anonymous reports can be found in <a href="https://www.gov.uk/guidance/tell-the-cma-about-a-competition-or-market-problem#confidentiality">our confidentiality statement</a>.</p>
+
+      <p>The CMA will not respond directly to every report it receives but monitors information provided and will take action where appropriate.</p>
+
+      <p>For more information about what will happen if you make a report click <a href="https://www.gov.uk/government/publications/whistleblowers-at-the-cma/guidance-on-whistleblowing">Guidance on whistleblowing - GOV.UK (www.gov.uk)</a></p>
+
+      <a href="./what-happened" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start Now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+
+    </div>
+
+  </div>
+{% endblock %}

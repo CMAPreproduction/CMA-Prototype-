@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Mergers Surveys
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./index">Home</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Surveys</h1>
+
+      
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Surveys</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Survey ID</th>
+            <th scope="col" class="govuk-table__header">Survey Name</th>
+            <th scope="col" class="govuk-table__header">Created by</th>
+            <th scope="col" class="govuk-table__header">Responses</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+            <th scope="col" class="govuk-table__header">Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">SRV-0001</th>
+            <th scope="row" class="govuk-table__header">Example Survey 1</th>
+            <td class="govuk-table__cell">Jonathan Beckett</td>
+            <td class="govuk-table__cell"><a href="./survey_responses">23</a></td>
+            <td class="govuk-table__cell">Closed</td>
+            <td class="govuk-table__cell"><a href="./survey_preview_0">Preview</a> <a href="./survey_copy">Copy</a></td>
+          </tr>  
+          <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">SRV-0002</th>
+                <th scope="row" class="govuk-table__header">Example Survey 2</th>
+                <td class="govuk-table__cell">Jonathan Beckett</td>
+                <td class="govuk-table__cell"><a href="./survey_responses">15</a></td>
+                <td class="govuk-table__cell">Open</td>
+                <td class="govuk-table__cell"><a href="./survey_preview_0">Preview</a> <a href="./survey_copy">Copy</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">SRV-0003</th>
+              <th scope="row" class="govuk-table__header">Example Survey 3</th>
+              <td class="govuk-table__cell">Chris Harvey</td>
+              <td class="govuk-table__cell">0</td>
+              <td class="govuk-table__cell">Draft</td>
+              <td class="govuk-table__cell"><a href="./survey_preview_0">Preview</a> <a href="./survey_edit">Edit</a> <a href="./#">Copy</a></td>
+            </tr>
+        </tbody>
+      </table>
+
+      <div class="govuk-button-group">
+        <a class="govuk-button" href="./survey_new">Create New Survey</a>
+      </div>
+
+
+    </div>
+
+  </div>
+{% endblock %}

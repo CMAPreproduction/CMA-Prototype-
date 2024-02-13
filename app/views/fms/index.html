@@ -1,0 +1,104 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  FMS Prototypes
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "FMS Prototypes",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">FMS Prototypes</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" NOWRAP>Link to Prototype</th>
+      <th scope="col" class="govuk-table__header" NOWRAP>Date</th>
+      <th scope="col" class="govuk-table__header" NOWRAP>Notes</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms0/index">Version 0</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-08-01</td>
+      <td class="govuk-table__cell">Draft development prototype. Includes an <a href="/fms/fms0/story1/">example pathway</a> reporting Funeral Director returns, and a Compliance Statement.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms1/index">Version 1</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-08-03</td>
+      <td class="govuk-table__cell">Evolution - modifying the organisation page based on feedback. Includes an <a href="/fms/fms1/story1/">example pathway</a> reporting Funeral Director returns, and a Compliance Statement.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms2/index">Version 2</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-08-04</td>
+      <td class="govuk-table__cell">Further evolution. Includes the <a href="/fms/fms2/story1/">example pathway</a>, and an illustration of an alternative approach to asking the "<a href="./fms/fms2/reporting/reporting-intro">what are you reporting</a>" series of questions that would replace the basic "what are you reporting?" question.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms3/index">Version 3</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-08-05</td>
+      <td class="govuk-table__cell">Introducing guidance text to each of the major pages. Includes the <a href="/fms/fms3/story1/">example pathway</a>, and an illustration of an alternative approach to asking the "<a href="./fms/fms3/reporting/reporting-intro">what are you reporting</a>" series of questions that would replace the basic "what are you reporting?" question.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms4/index">Version 4</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-08-12</td>
+      <td class="govuk-table__cell">Revision following first round of user research based on feedback and content provided. Includes the <a href="/fms/fms4/story1/">example pathway</a>, a <a href="/fms/fms4/map">map</a> page, and an <a href="/fms/fms4/email">email notification</a> text.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms5/index">Version 5</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-08-12</td>
+      <td class="govuk-table__cell">Evolution of the entire solution to incorporate user logins, invites, partial population of reports, etc. A <a href="/fms/fms5/map">map</a> page provides an index of all pages in the solution (including the <a href="/fms/fms5/email">email notification</a> text).</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms6/index">Version 6</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-09-23</td>
+      <td class="govuk-table__cell">A hybrid of versions 4 and 5 - moving towards the operational beta. A <a href="/fms/fms6/map">map</a> page provides an index of all pages in the solution (including the <a href="/fms/fms6/email">email notification</a> text).</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms7/index">Version 7</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-09-23</td>
+      <td class="govuk-table__cell">Adding total columns to the FD 10+ branch layout - see the <a href="/fms/fms7/report_fd_10">new layout</a>, and initial options <a href="/fms/fms7/report_fd_10a">A</a> and <a href="/fms/fms7/report_fd_10b">B</a>. A <a href="/fms/fms7/map">map</a> page provides an index of all pages in the solution (including the <a href="/fms/fms7/email">email notification</a> text).</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms8/index">Version 8</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-11-01</td>
+      <td class="govuk-table__cell">Added text box on Crematorium Operator report illustrating possible approach to listing branch names.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms9/index">Version 9</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-11-02</td>
+      <td class="govuk-table__cell">Speculative re-design based on Crematorium Operator returns having multiple branches (in line with Funeral Director returns).</td>
+    </tr>
+	  <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms10/index">Version 10</a></th>
+      <td class="govuk-table__cell" NOWRAP>2022-11-23</td>
+      <td class="govuk-table__cell">Re-design of the review page to allow totals to fit properly.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms11/index">Version 11</a></th>
+      <td class="govuk-table__cell" NOWRAP>2023-06-19</td>
+      <td class="govuk-table__cell">Prototype brought in line with current production version</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms12/index">Version 12</a></th>
+      <td class="govuk-table__cell" NOWRAP>2023-06-20</td>
+      <td class="govuk-table__cell">First draft of re-worked crematorium operator report with branches</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/fms/fms13/index">Version 13</a></th>
+      <td class="govuk-table__cell" NOWRAP>2023-07-14</td>
+      <td class="govuk-table__cell">Following updates from Helen.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}

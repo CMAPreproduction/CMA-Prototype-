@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Send funeral or crematorium information to the CMA
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="./#">Home</a>
+    </li>
+  </ol>
+</div>
+  
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+<div class="govuk-grid-column-two-thirds">   
+<div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+  <span class="govuk-caption-xl gem-c-title__context">Guidance</span>
+  <h1 class="gem-c-title__text govuk-heading-l">
+    Send funeral or crematorium information to the CMA
+  </h1>
+</div>
+</div>
+
+<div class="govuk-grid-column-two-thirds">
+  <p class="gem-c-lead-paragraph">Funeral directors and crematorium operators can use this service to submit revenue returns and compliance statements</p>
+</div>
+
+</div>
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <div id="contents" class="app-c-contents-list-with-body">
+    
+    
+
+      
+<div class="gem-c-govspeak govuk-govspeak " data-module="govspeak">
+    
+  <div class="govspeak">
+<h2 id="information-you-will-need" class="govuk-heading-m">Information you will need</h2>
+
+<p class="govuk-body">You only need to submit information if you are:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>A crematorium operator</li>
+  <li>A funeral director operating 5 or more branches</li>
+</ul>
+
+<p class="govuk-body">In completing this form, you will be asked to provide information including:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>your name and business details</li>
+  <li>data on your business’ revenue</li>
+  <li>number of funerals or cremations your business carried out during the reporting period</li>
+  <li>depending on your business, you may also be asked to submit a compliance statement (for all crematorium operators and funeral directors with 10 or more branches)</li>
+</ul>
+
+<div class="call-to-action" style="background-color:#eee;padding:30px; margin-bottom:20px;">
+  <p>Compliance statements for funeral directors must be submitted by a Chief Executive Officer, Managing Director, Non-Executive Director, Senior Director, or a business owner.</p>
+  <p>By filling out this form, you confirm you are a decision maker at your business and can verify the compliance statement.</p>
+  <p>Crematorium operators also need to submit a compliance statement.</p>
+</div>
+
+<p>You’ll need all your information with you, as you’re unable to save this information or come back to it later.</p>
+
+<h3 class="govuk-heading-m">What we will do with this information</h3>
+<p class="govuk-body">We will use the information provided to publish an annual review of market outcomes in the funerals sector. You can read more about this in the <a href="https://www.gov.uk/government/publications/funerals-market-investigation-order-2021" target="_blank">Funerals Market Investigation Order 2021 (opens in a new tab)</a></p>
+
+<p><a class="gem-c-button govuk-button govuk-button--start" role="button" data-module="govuk-button" draggable="false" href="./organisation"> Start <svg class="govuk-button__start-icon govuk-!-display-none-print" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewbox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a></p>
+
+</div>
+
+</div>
+
+      
+</div>
+
+{% endblock %}

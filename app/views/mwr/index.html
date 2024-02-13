@@ -1,0 +1,97 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  MWR Prototypes
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "MWR Prototypes",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">MWR Prototypes</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Link to Prototype</th>
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Notes</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr0/homepage">Version 0</a></th>
+      <td class="govuk-table__cell">2022-03-29</td>
+      <td class="govuk-table__cell">Transfer of initial wireframes to prototype</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr1/homepage">Version 1</a></th>
+      <td class="govuk-table__cell">2022-04-05</td>
+      <td class="govuk-table__cell">Modifications made following first round of user research</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr2/homepage">Version 2</a></th>
+      <td class="govuk-table__cell">2022-05-18</td>
+      <td class="govuk-table__cell">Modifications made following further user research</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr3/homepage">Version 3</a></th>
+      <td class="govuk-table__cell">2022-06-28</td>
+      <td class="govuk-table__cell">Content modifications made following further user research</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr4/homepage">Version 4</a></th>
+      <td class="govuk-table__cell">2022-07-01</td>
+      <td class="govuk-table__cell">Minor content modifications to the homepage, what happened, and submission summary pages.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr5/homepage">Version 5</a></th>
+      <td class="govuk-table__cell">2022-07-08</td>
+      <td class="govuk-table__cell">Minor content modifications to the homepage, what happened, and review pages.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr6/homepage">Version 6</a></th>
+      <td class="govuk-table__cell">2022-07-12</td>
+      <td class="govuk-table__cell">Minor content modifications - bringing the description of handling of anonymous submissions in line with other services.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr7/homepage">Version 7</a></th>
+      <td class="govuk-table__cell">2022-08-04</td>
+      <td class="govuk-table__cell">Addressing alpha assessment issues</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr8/homepage">Version 8</a></th>
+      <td class="govuk-table__cell">2022-08-22</td>
+      <td class="govuk-table__cell">Added multiple businesses and contact detail permission pages. Removed before you start, nations affected and information use pages.  Re-ordering pages and re-ordered check answers page to reflect new order.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr9/homepage">Version 9</a></th>
+      <td class="govuk-table__cell">2022-10-26</td>
+      <td class="govuk-table__cell">Multiple changes as per communication from Helena.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr10/homepage">Version 10</a></th>
+      <td class="govuk-table__cell">2022-11-09</td>
+      <td class="govuk-table__cell">Further content changes as per communication from Helena.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr11/homepage">Version 11</a></th>
+      <td class="govuk-table__cell">2022-12-19</td>
+      <td class="govuk-table__cell">Further content changes as per communication from Helena.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="govuk-table__header"><a href="/mwr/mwr12/homepage">Version 12</a></th>
+      <td class="govuk-table__cell">2022-12-19</td>
+      <td class="govuk-table__cell">A simulated GOV UK front page leading into the test system.</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

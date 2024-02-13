@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Thankyou
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Report Submitted
+        </h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>CMA12345</strong>
+        </div>
+      </div>
+
+      <p class="govuk-body">Thank you for submitting your Funerals Market compliance form. We have sent you a confirmation email, outlining that we've received your submission.</p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+
+      <p class="govuk-body">Your report has been sent to the Competition and Markets Authority (CMA)'s remedies team. They will monitor all information provided, and may contact you for further clarification if it's required.</p>
+      
+      <p class="govuk-body">You can choose to have a copy of your submission sent to you by email.</p>
+      <div>
+        <button class="govuk-button  govuk-button--secondary" data-module="govuk-button">
+          Email me a copy
+        </button>
+      </div>
+
+      <p class="govuk-body">
+        <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+      </p>
+
+
+
+    </div>
+  </div>
+{% endblock %}

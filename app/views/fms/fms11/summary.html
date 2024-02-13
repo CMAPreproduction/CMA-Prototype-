@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Thankyou
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Send funeral or crematorium information to the CMA",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+            Report submitted
+        </h1>
+    
+        <div class="govuk-panel__body">
+            <span class="translation_missing" title="translation missing: en.wizard.summary.your_reference_number">Your Reference Number</span>
+            <br>
+            <strong>
+                CMA-FMS-00175
+            </strong>
+        </div>
+    
+    </div>
+    
+    <p class="govuk-body">Thank you for submitting your Funerals Market compliance form.</p>
+    <p class="govuk-body">We have sent you a confirmation email, outlining that we've received your submission. Check your junk folder if an email doesn't appear in your inbox.</p>
+    <h2 class="govuk-heading-m">What happens next</h2>
+    <p class="govuk-body">Your report has been sent to the Competition and Markets Authority (CMA)'s remedies team. They will monitor all information provided, and may contact you for further clarification if it's required. If you need to get in touch with us in the meantime, email <a href="mailto:remediesmonitoringteam@cma.gov.uk">remediesmonitoringteam@cma.gov.uk</a>.</p>
+    <p class="govuk-body">You can view your submission to save or print it:</p>
+    
+        
+    <form class="edit_submission" id="edit_submission_558b949a-a48c-43d0-b324-8f959a2cb25a" target="_blank" action="#" accept-charset="UTF-8" method="get">
+        <button type="submit" formnovalidate="formnovalidate" class="govuk-button" data-module="govuk-button" data-prevent-double-click="true"><span class="translation_missing" title="translation missing: en.wizard.summary.view_submission">View Submission</span></button>
+    </form>
+    <p class="govuk-body"><a href="https://forms.office.com/e/WhzrZWHyMj" target="_blank">What did you think of this service? (opens in a new tab)</a> (takes 30 seconds)</p>
+
+    </div>
+  </div>
+{% endblock %}

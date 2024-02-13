@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Your contact details
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./organisation" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-l">What kind of organisation are you reporting for?</h1>
+
+      <p class="govuk-body">Select all options that apply to your organisation.</p>
+      
+      <div class="govuk-body">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="funeral_director" name="services" type="checkbox" value="text" data-aria-controls="conditional-fd-branches">
+                <label class="govuk-label govuk-checkboxes__label" for="funeral_director">Funeral Director</label>
+              </div>
+              <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-fd-branches">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="fd_branches">Number of Branches</label>
+                  <input class="govuk-input govuk-!-width-one-quarter" id="fd_branches" name="fd_branches" type="text" spellcheck="false">
+                </div>
+              </div>
+              
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="crematorium_operator" name="services" type="checkbox" value="text" data-aria-controls="conditional-co-branches">
+                <label class="govuk-label govuk-checkboxes__label" for="crematorium_operator">Crematorium Operator</label>
+              </div>
+              <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-co-branches">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="co_branches">Number of Branches</label>
+                  <input class="govuk-input govuk-!-width-one-quarter" id="co_branches" name="co_branches" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+        
+          </fieldset>
+        </div>
+
+      </div>      
+
+      <div class="govuk-body">
+        
+        <a class="govuk-button" href="./contact">Continue</a>
+        
+      </div>    
+
+    </div>
+
+  </div>
+{% endblock %}

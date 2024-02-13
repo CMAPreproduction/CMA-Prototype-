@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  CMA Funerals Market Service
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        Logged in as Fred Smith, of Smith, Jones & Co. Ltd. <a class="govuk-breadcrumbs__link" href="./index">Logout</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">CMA Funerals Market Service</h1>
+
+      <ul class="govuk-list">
+        <li><a class="govuk-link" href="./account">Update account details</a></li>
+        <li><a class="govuk-link" href="./organisation">Update organisation details</a></li>
+        <li><a class="govuk-link" href="./services">Update service details</a></li>
+        <li><a class="govuk-link" href="./invite">Invite a staff member</a></li>
+      </ul>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <h1 class="govuk-heading-l">Returns</h1>
+      <p class="govuk-body">See your organisation's in-progress or submitted returns.</p>
+      
+      <a href="./create_return"><button class="govuk-button" data-module="govuk-button">Create new  </button></a>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header ">Reference</th>
+            <th scope="col" class="govuk-table__header ">Type</th>
+            <th scope="col" class="govuk-table__header ">Submitted by</th>
+            <th scope="col" class="govuk-table__header ">Sent</th>
+            <th scope="col" class="govuk-table__header ">Status</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="./part_a_funeral_director_april">CMA34567</a></th>
+            <td class="govuk-table__cell">Funeral Director April Returns</td>
+            <td class="govuk-table__cell">&nbsp;</td>
+            <td class="govuk-table__cell">&nbsp;</td>
+            <td class="govuk-table__cell">In-Progress</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="./part_c_crematorium_operator_april_sent">CMA23456</a></th>
+            <td class="govuk-table__cell">Crematorium Operator April Returns</td>
+            <td class="govuk-table__cell">Alice Jones</td>
+            <td class="govuk-table__cell">2022-08-28</td>
+            <td class="govuk-table__cell">Submitted</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="./part_b_funeral_director_april_sent">CMA12345</a></th>
+            <td class="govuk-table__cell">Funeral Director April Returns</td>
+            <td class="govuk-table__cell">Alice Jones</td>
+            <td class="govuk-table__cell">2021-08-12</td>
+            <td class="govuk-table__cell">Submitted</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <h1 class="govuk-heading-l">Compliance Statements</h1>
+      <p class="govuk-body">See your organisation’s in-progress or submitted compliance reports.</p>
+      <a href="./create_compliance_statement"><button class="govuk-button" data-module="govuk-button">Create new</button></a>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header ">Reference</th>
+            <th scope="col" class="govuk-table__header ">Type</th>
+            <th scope="col" class="govuk-table__header ">Submitted by</th>
+            <th scope="col" class="govuk-table__header ">Sent</th>
+            <th scope="col" class="govuk-table__header ">Status</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="./compliance_funeral_director">CMA2345</a></th>
+            <td class="govuk-table__cell">Funeral Director Compliance Statement</td>
+            <td class="govuk-table__cell">Fred Smith</td>
+            <td class="govuk-table__cell">2022-08-12</td>
+            <td class="govuk-table__cell">In-Progress</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="./compliance_crematorium_operator_sent">CMA1234</a></th>
+            <td class="govuk-table__cell">Crematorium Operator Compliance Statement</td>
+            <td class="govuk-table__cell">Fred Smith</td>
+            <td class="govuk-table__cell">2022-02-28</td>
+            <td class="govuk-table__cell">Submitted</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block pageTitle %}
+  What are you reporting to the CMA ?
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <form class="form" action="./classify-answer" method="post">
+        
+        <div class="govuk-form-group">
+        
+          <fieldset class="govuk-fieldset">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                What are you reporting to the CMA?
+              </h1>
+            </legend>
+            
+            <div class="govuk-body">
+              <p>If you need to report more than one of these actions, please complete the form once for each type.</p>
+            </div>
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-0" name="classify" type="radio" value="A problem with a business">
+                <label class="govuk-label govuk-radios__label" for="classify-0">
+                  A problem with a business
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-1" name="classify" type="radio" value="Issues in a sector of the UK economy">
+                <label class="govuk-label govuk-radios__label" for="classify-1">
+                  Issues in a sector of the UK economy
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-2" name="classify" type="radio" value="Businesses agreeing to not compete with each other">
+                <label class="govuk-label govuk-radios__label" for="classify-2">
+                  Businesses agreeing to not compete with each other
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-3" name="classify" type="radio" value="Information or evidence related to an ongoing investigation">
+                <label class="govuk-label govuk-radios__label" for="classify-3">
+                  Information or evidence related to an ongoing investigation
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-4" name="classify" type="radio" value="Issues with a business I work or worked with (whistleblowing)">
+                <label class="govuk-label govuk-radios__label" for="classify-4">
+                  Issues with a business I work or worked with (whistleblowing)
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-5" name="classify" type="radio" value="Something I've already told you about">
+                <label class="govuk-label govuk-radios__label" for="classify-5">
+                  Something I've already told you about
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="classify-6" name="classify" type="radio" value="Something else">
+                <label class="govuk-label govuk-radios__label" for="classify-6">
+                  Something else
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        
+      </form>
+
+    </div>
+
+  </div>
+{% endblock %}

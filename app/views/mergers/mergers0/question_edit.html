@@ -1,0 +1,175 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Edit Question
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./survey_edit">Back</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h2 class="govuk-heading-xl">Edit Question</h2>
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--m" for="event-name">
+            Title
+          </label>
+        </h1>
+        <div id="more-detail-hint" class="govuk-hint">
+          The title of the survey will appear as the subject of emails sent to respondents, and at the top of the survey form.
+        </div>
+        <div class="govuk-body">What is your favourite colour? <a href="./#">Edit</a></div>
+      </div>
+
+      <br />
+
+      <div class="govuk-form-group">
+        <label class="govuk-label--m" for="sort">
+          Data Type
+        </label>
+        <div id="more-detail-hint" class="govuk-hint">
+          Caution - changing the data type will remove previous question configuration.
+        </div>
+        <div class="govuk-body">Choice <a href="./#">Edit</a></div>
+      </div>
+
+      <br />
+
+      <div class="govuk-form-group">
+        <label class="govuk-label--m" for="sort">
+          Required?
+        </label>
+        <div id="more-detail-hint" class="govuk-hint">
+          Choose if an answer is required or not. If an answer is not required, considering prefacing your question.
+        </div>
+        <div class="govuk-body">Required Field <a href="./#">Edit</a></div>
+      </div>
+
+      <br />
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--m" for="more-detail">
+            Guidance
+          </label>
+        </h1>
+        <div id="more-detail-hint" class="govuk-hint">
+          This text will appear at the top of the form. Include any guidance necessary.
+        </div>
+        <div class="govuk-body">Choose an option from the dropdown below: <a href="./#">Edit</a></div>
+      </div>
+      
+      <br />
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--m" for="more-detail">
+            Choices
+          </label>
+        </h1>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Choice</th>
+              <th scope="col" class="govuk-table__header">Default</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Red</th>
+              <td class="govuk-table__cell">Default</td>
+              <td class="govuk-table__cell"><a href="./#">Edit</a> <a href="./#">Remove</a></td>
+            </tr>  
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Green</th>
+              <td class="govuk-table__cell">&nbsp;</td>
+              <td class="govuk-table__cell"><a href="./#">Edit</a> <a href="./#">Remove</a></td>
+            </tr> 
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Blue</th>
+              <td class="govuk-table__cell">&nbsp;</td>
+              <td class="govuk-table__cell"><a href="./#">Edit</a> <a href="./#">Remove</a></td>
+            </tr>  
+          </tbody>
+        </table>
+        <p class="govuk-body"><a href="#">Add New Choice</a></p>
+      </div>
+
+      <br />
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--m" for="more-detail">
+            Routing
+          </label>
+        </h1>
+        <div id="more-detail-hint" class="govuk-hint">
+          Choice fields allow independent routing for each choice.
+        </div>
+        
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Choice</th>
+              <th scope="col" class="govuk-table__header">Route</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Red</th>
+              <td class="govuk-table__cell">Go to Question 3</td>
+              <td class="govuk-table__cell"><a href="./#">Edit</a></td>
+            </tr>  
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Green</th>
+              <td class="govuk-table__cell">Go to Question 4</td>
+              <td class="govuk-table__cell"><a href="./#">Edit</a></td>
+            </tr> 
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Blue</th>
+              <td class="govuk-table__cell">Go to Question 4</td>
+              <td class="govuk-table__cell"><a href="./#">Edit</a></td>
+            </tr>  
+          </tbody>
+        </table>
+  
+      </div>
+      
+      
+
+    </div>
+
+  </div>
+{% endblock %}

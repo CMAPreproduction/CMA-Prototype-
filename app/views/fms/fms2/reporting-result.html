@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Reporting Result
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+
+
+  
+{% endblock %}
+
+{% block content %}
+  
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset" aria-describedby="reporting-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Reporting Forms (not seen by user)
+          </h1>
+        </legend>
+        <div id="reporting-hint" class="govuk-hint">
+          Following your choices, the application would then automatically route through the appropriate form:
+        </div>
+
+        <h2 class="govuk-heading-m">For Funeral Directors:</h1>
+
+        <h3 class="govuk-heading-s">With 5 or more branches:</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="./part_a_funeral_director">Part A</a> (<em>Funeral Directors, 5 or more branches</em>)</li>
+        </ul>
+
+        <h3 class="govuk-heading-s">With 10 or more branches:</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="./part_b_funeral_director">Part B</a> (<em>Funeral Directors, 10 or more branches</em>)</li>
+        </ul>
+
+        <h3 class="govuk-heading-s">Compliance Statements</h1>    
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="./compliance_funeral_director">Compliance Statement - Funeral Directors</a> (<em>10 or more branches</em>)</li>
+        </ul>
+
+        <h2 class="govuk-heading-m">For Crematorim Operators:</h1>
+          
+        <h3 class="govuk-heading-s">April Returns:</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="./part_c_crematorium_operator_april">Part C</a> (<em>Crematorium Operators, April Return</em>)</li>
+        </ul>
+
+        <h3 class="govuk-heading-s">October Returns:</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="./part_d_crematorium_operator_october">Part D</a> (<em>Crematorium Operators, October Return</em>)</li>
+        </ul>
+    
+        <h3 class="govuk-heading-s">Compliance Statements</h1>    
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="./compliance_crematorium_operator">Compliance Statement - Crematorium Operators</a></li>
+        </ul>
+
+      </fieldset>
+
+    </div>
+
+    <div class="govuk-body">
+      
+      <a class="govuk-button" href="./reporting-intro">Continue</a>
+      
+    </div>    
+
+
+{% endblock %}

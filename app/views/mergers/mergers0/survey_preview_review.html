@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Edit Survey
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">Check your answers before submitting your survey</h1>
+      
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What is your full name?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jonathan Beckett
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./survey_preview_1">
+              Change<span class="govuk-visually-hidden"> what is your full name?</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What is your favourite colour?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Red
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./survey_preview_2">
+              Change<span class="govuk-visually-hidden"> what is your favourite colour?</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What do you like most about Red?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Not provided
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./survey_preview_3">
+              Change<span class="govuk-visually-hidden"> what do you like most about red?</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+      <h2 class="govuk-heading-m">Now submit your survey</h2>
+      <p class="govuk-body">By submitting this survey you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+      <form action="./survey_preview_end" method="post" novalidate>
+        <input type="hidden" name="answers-checked" value="true">
+        <button class="govuk-button" data-module="govuk-button">
+          Accept and send
+        </button>
+      </form>
+    
+
+    </div>
+
+  </div>
+{% endblock %}

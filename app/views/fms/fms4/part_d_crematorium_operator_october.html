@@ -1,0 +1,379 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Crematorium operators returns (October)
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="./map" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-xl">Crematorium operators returns (October)</h1>
+
+      <p class="govuk-body">Please add the total revenue and total number of cremations carried out by your business in each of the services set out below.</p>
+      <p class="govuk-body">This should include all revenue generated from crematoria services excluding burial services.</p>
+      <p class="govuk-body">Please do not include revenue from memorials related to crematoria services here, this can be provided in the next step.</p>
+      <p class="govuk-body">These should be within the first quarter period from 1 September (6 months) and within the second quarter period from 1 December (6 months).</p>
+      <p class="govuk-body">Leave the boxes blank if not applicable to your business. Once all your information is entered, select Continue.</p>
+
+      <h2 class="govuk-heading-l govuk-!-margin-top-9">First Quarter of Reporting Period</h2>
+
+      <div class="govuk-form-group">
+
+        <h3 class="govuk-heading-m">Standard fee attended crematorium services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations that included a service with mourners present and held in peak hours at your crematorium. Peak hours are typically from 10am to 4pm on weekdays.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-standard-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-standard-total" name="q1-standard-total" type="text" spellcheck="false">
+                </div>
+              </div>
+            
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-standard-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-standard-number" name="q1-standard-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h3 class="govuk-heading-m">Reduced fee attended crematorium services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations that included a service with mourners present and held in off-peak hours at your crematorium. Peak hours are typically from 10am to 4pm on weekdays.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business. </p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-reduced-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-reduced-total" name="q1-reduced-total" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-reduced-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-reduced-number" name="q1-reduced-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="govuk-heading-m">Unattended crematorium services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations that did not include a service and mourners were not present. This is sometimes known as a direct cremation.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-unattended-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-unattended-total" name="q1-unattended-total" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-unattended-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-unattended-number" name="q1-unattended-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h3 class="govuk-heading-m">Other Services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations carried out for any other services not identified by the categories above.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-other-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-other-total" name="q1-other-total" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-other-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-other-number" name="q1-other-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h3 class="govuk-heading-m">Memorials</h3>
+        <p class="govuk-caption-m">Add the total revenue from memorial services.</p>
+        <p class="govuk-caption-m">Leave the box blank if not applicable to your business. </p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-memorials-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-memorials-total" name="q1-memorials-total" type="text" spellcheck="false">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <h2 class="govuk-heading-l govuk-!-margin-top-9">Second Quarter of Reporting Period</h2>
+
+      <div class="govuk-form-group">
+
+        <h3 class="govuk-heading-m">Standard fee attended crematorium services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations that included a service with mourners present and held in peak hours at your crematorium. Peak hours are typically from 10am to 4pm on weekdays.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-standard-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-standard-total" name="q1-standard-total" type="text" spellcheck="false">
+                </div>
+              </div>
+            
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-standard-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-standard-number" name="q1-standard-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h3 class="govuk-heading-m">Reduced fee attended crematorium services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations that included a service with mourners present and held in off-peak hours at your crematorium. Peak hours are typically from 10am to 4pm on weekdays.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business. </p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-reduced-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-reduced-total" name="q1-reduced-total" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-reduced-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-reduced-number" name="q1-reduced-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="govuk-heading-m">Unattended crematorium services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations that did not include a service and mourners were not present. This is sometimes known as a direct cremation.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-unattended-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-unattended-total" name="q1-unattended-total" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-unattended-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-unattended-number" name="q1-unattended-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h3 class="govuk-heading-m">Other Services</h3>
+        <p class="govuk-caption-m">Add the total revenue and total number of cremations carried out for any other services not identified by the categories above.</p>
+        <p class="govuk-caption-m">Leave the boxes blank if not applicable to your business.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-other-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-other-total" name="q1-other-total" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-half">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-other-number">
+                  Total number of cremations carried out
+                </label>
+                <div class="govuk-input__wrapper">
+                    <input class="govuk-input govuk-input--width-5" id="q1-other-number" name="q1-other-number" type="text" spellcheck="false">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h3 class="govuk-heading-m">Memorials</h3>
+        <p class="govuk-caption-m">Add the total revenue from memorial services.</p>
+        <p class="govuk-caption-m">Leave the box blank if not applicable to your business. </p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="q1-memorials-total">
+                  Total revenue
+                </label>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="q1-memorials-total" name="q1-memorials-total" type="text" spellcheck="false">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="govuk-body">
+        
+        <a class="govuk-button" href="./map">Continue</a>
+        
+      </div>    
+
+    </div>
+
+  </div>
+{% endblock %}

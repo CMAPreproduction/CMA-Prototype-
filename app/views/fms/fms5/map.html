@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Map
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Funerals Market Service",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  
+  
+    <h1 class="govuk-heading-l">Map of Pages (for prototype only - not seen by users)</h1>
+
+    <p class="govuk-body">This page only exists to provide quick access to the various pages throughout the prototype.</p>
+    
+    <h2 class="govuk-heading-m">Serice Start Page</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./index">Service Start Page</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Account Creation</h2>
+    <p class="govuk-body">The first user in an organisation would create an account via the login page - all subsequent users should be invited in.</p>
+    <ul class="govuk-list govuk-list--bullet">
+<!--      <li><a href="./onboard_information_use">Information Use</a></li>-->
+      <li><a href="./onboard_account">Account Information</a></li>
+      <li><a href="./onboard_organisation">Organisation Information</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Account & Organisation</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./account">Account</a> - <em>update your account details</em></li>
+      <li><a href="./organisation">Organisation</a> - <em>update your organisation details</em></li>
+      <li><a href="./services">Services</a> - <em>update the services your organisation provides</em></li>
+      <li><a href="./invite">Invite</a> - <em>used to invite new users, automatically tied to the same organisation</em></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Homepage</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./home">Home</a>
+    </ul>
+        
+    <h2 class="govuk-heading-m">Reporting</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./part_a_funeral_director_april">Part A</a> - <em>Funeral Directors, 5 or more branches, April illustrated</em></li>
+      <li><a href="./part_b_funeral_director_april">Part B</a> - <em>Funeral Directors, 10 or more branches, April illustrated</em></li>
+      <li><a href="./part_c_crematorium_operator_april">Part C</a> - <em>Crematorium Operators, April illustrated</em></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Compliance Statements</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./create_compliance_statement">Create Compliance Statement</a> - <em>shown when org provides both funerals and cremations</em></li>
+      <li><a href="./compliance_funeral_director">Funeral Directors</a> - <em>10 or more branches</em></li>
+      <li><a href="./compliance_crematorium_operator">Crematorium Operators</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Information Gathering</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="#">Review</a> - <em>becomes obsolete in this version</em></li>
+      <li><a href="#">Information Use</a> - <em>becomes obsolete in this version</em></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Submission Summaries</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./summary_return">Summary</a> - <em>for Returns</em></li>
+      <li><a href="./summary_compliance_statement">Summary</a> - <em>for Compliance Statements</em></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Email Notification</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./email">E-Mail Notification</a> - <em>sample text of receipt email</em></li>
+    </ul>  
+
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Related Businesses
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "CMA Public Gateway",
+  serviceUrl: "#",
+  navigation: []
+}) }}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-l">
+        Related Businesses
+      </h1>
+      
+      <div class="govuk-body">
+        <p>You can add the details of multiple businesses related to your report by selecting "Add Business" below as many times as necessary.</p>
+      </div>
+      
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Business Details</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Name</th>
+            <th scope="col" class="govuk-table__header">Address</th>
+            <th scope="col" class="govuk-table__header">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Alpha Corporation</th>
+            <td class="govuk-table__cell">Building, Road, City, Postcode</td>
+            <td class="govuk-table__cell"><a href="./business-edit">Change</a>&nbsp;&nbsp;&nbsp;<a href="#">Remove</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Beta Corporation</th>
+            <td class="govuk-table__cell">Building, Road, City, Postcode</td>
+            <td class="govuk-table__cell"><a href="./business-edit">Change</a>&nbsp;&nbsp;&nbsp;<a href="#">Remove</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Charlie Corporation</th>
+            <td class="govuk-table__cell">Building, Road, City, Postcode</td>
+            <td class="govuk-table__cell"><a href="./business-edit">Change</a>&nbsp;&nbsp;&nbsp;<a href="#">Remove</a></td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <div class="govuk-body">
+        <form class="form" action="./business-add" method="post">
+          <button class="govuk-button" data-module="govuk-button">Add Business</button>
+        </form>
+      </div>
+    
+      <div class="govuk-body">
+        
+        <a class="govuk-button" href="./what-happened">Continue</a>
+        
+      </div>
+      
+    
+
+    </div>
+
+  </div>
+{% endblock %}

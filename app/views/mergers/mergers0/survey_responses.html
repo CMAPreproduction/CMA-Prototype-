@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Survey Responses
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader({serviceName: "CMA Mergers Surveys"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./survey_list">Back</a>
+      </li>
+    </ol>
+  </div>
+
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Survey Responses</h1>
+      <h2 class="govuk-heading-l">SRV-0001</h2>
+      
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--l">Questions</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" >Response</th>
+            <th scope="col" class="govuk-table__header" >Respondent</th>
+            <th scope="col" class="govuk-table__header" >Date Received</th>
+            <th scope="col" class="govuk-table__header" >Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">SRV-0001-0001</th>
+            <td scope="row" class="govuk-table__cell">jonathan.beckett@deltascheme.com</td>
+            <td scope="row" class="govuk-table__cell">2023-11-27</td>
+            <td scope="row" class="govuk-table__cell"><a href="./response_view">View</a> <a href="#">PDF</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">SRV-0001-0002</th>
+            <td scope="row" class="govuk-table__cell">chris.harvey@deltascheme.com</td>
+            <td scope="row" class="govuk-table__cell">2023-11-27</td>
+            <td scope="row" class="govuk-table__cell"><a href="./response_view">View</a> <a href="#">PDF</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">SRV-0001-0003</th>
+            <td scope="row" class="govuk-table__cell">andrew.hawkins@deltascheme.com</td>
+            <td scope="row" class="govuk-table__cell">2023-11-27</td>
+            <td scope="row" class="govuk-table__cell"><a href="./response_view">View</a> <a href="#">PDF</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+
+  </div>
+{% endblock %}
